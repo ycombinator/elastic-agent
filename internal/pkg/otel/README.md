@@ -41,9 +41,16 @@ This section provides a summary of components included in the Elastic Distributi
 
 | Component | Version |
 |---|---|
+<<<<<<< HEAD
 | fileexporter | v0.98.0|
 | debugexporter | v0.96.0|
 | otlpexporter | v0.96.0|
+=======
+| elasticsearchexporter | v0.97.0|
+| fileexporter | v0.97.0|
+| debugexporter | v0.97.0|
+| otlpexporter | v0.97.0|
+>>>>>>> a045482d51 (Make `elasticsearchexporter` available in Agent running in OTel mode (#4707))
 
 
 

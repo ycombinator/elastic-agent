@@ -1,6 +1,8 @@
 module github.com/elastic/elastic-agent
 
-go 1.21
+go 1.21.0
+
+toolchain go1.21.8
 
 require (
 	github.com/Microsoft/go-winio v0.6.1
@@ -105,6 +107,39 @@ require (
 )
 
 require (
+<<<<<<< HEAD
+=======
+	// open telemetry dependencies
+	// pinned to v0.97.0 due to issue with ports binding which causes our tests to fail
+	// Do NOT upgrade the version beyond 0.97.0 until https://github.com/open-telemetry/opentelemetry-collector/issues/10031 is fixed!
+	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter v0.97.0
+	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/fileexporter v0.97.0
+	github.com/open-telemetry/opentelemetry-collector-contrib/processor/attributesprocessor v0.97.0
+	github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourceprocessor v0.97.0
+	github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor v0.97.0
+	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/filelogreceiver v0.97.0
+	go.opentelemetry.io/collector/component v0.97.0
+	go.opentelemetry.io/collector/confmap v0.99.0
+	go.opentelemetry.io/collector/confmap/converter/expandconverter v0.97.0
+	go.opentelemetry.io/collector/confmap/provider/envprovider v0.97.0
+	go.opentelemetry.io/collector/confmap/provider/fileprovider v0.97.0
+	go.opentelemetry.io/collector/confmap/provider/httpprovider v0.97.0
+	go.opentelemetry.io/collector/confmap/provider/httpsprovider v0.97.0
+	go.opentelemetry.io/collector/confmap/provider/yamlprovider v0.97.0
+	go.opentelemetry.io/collector/exporter v0.97.0
+	go.opentelemetry.io/collector/exporter/debugexporter v0.97.0
+	go.opentelemetry.io/collector/exporter/otlpexporter v0.97.0
+	go.opentelemetry.io/collector/featuregate v1.6.0
+	go.opentelemetry.io/collector/otelcol v0.97.0
+	go.opentelemetry.io/collector/processor v0.97.0
+	go.opentelemetry.io/collector/processor/batchprocessor v0.97.0
+	go.opentelemetry.io/collector/processor/memorylimiterprocessor v0.97.0
+	go.opentelemetry.io/collector/receiver v0.97.0
+	go.opentelemetry.io/collector/receiver/otlpreceiver v0.97.0
+)
+
+require (
+>>>>>>> a045482d51 (Make `elasticsearchexporter` available in Agent running in OTel mode (#4707))
 	github.com/Jeffail/gabs/v2 v2.6.0 // indirect
 	github.com/StackExchange/wmi v1.2.1 // indirect
 	github.com/akavel/rsrc v0.8.0 // indirect
@@ -120,6 +155,7 @@ require (
 	github.com/dnephin/pflag v1.0.7 // indirect
 	github.com/docker/docker v25.0.5+incompatible // indirect
 	github.com/docker/go-connections v0.5.0 // indirect
+	github.com/elastic/go-elasticsearch/v7 v7.17.10 // indirect
 	github.com/elastic/go-structform v0.0.10 // indirect
 	github.com/elastic/go-windows v1.0.1 // indirect
 	github.com/elastic/gosigar v0.14.2 // indirect
@@ -161,6 +197,7 @@ require (
 	github.com/knadh/koanf/providers/confmap v0.1.0 // indirect
 	github.com/knadh/koanf/v2 v2.1.1 // indirect
 	github.com/leodido/ragel-machinery v0.0.0-20190525184631-5f46317e436b // indirect
+	github.com/lestrrat-go/strftime v1.0.6 // indirect
 	github.com/lufia/plan9stats v0.0.0-20211012122336-39d0f177ccd0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/markbates/pkger v0.17.0 // indirect
@@ -178,12 +215,22 @@ require (
 	github.com/mostynb/go-grpc-compression v1.2.2 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/onsi/ginkgo/v2 v2.9.0 // indirect
+<<<<<<< HEAD
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.98.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter v0.98.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent v0.98.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl v0.98.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil v0.98.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza v0.98.0 // indirect
+=======
+	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.97.0 // indirect
+	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.97.0 // indirect
+	github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter v0.97.0 // indirect
+	github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent v0.97.0 // indirect
+	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl v0.97.0 // indirect
+	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil v0.97.0 // indirect
+	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza v0.97.0 // indirect
+>>>>>>> a045482d51 (Make `elasticsearchexporter` available in Agent running in OTel mode (#4707))
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.1.0 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
