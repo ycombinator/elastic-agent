@@ -17,11 +17,6 @@ import (
 	fleetgateway "github.com/elastic/elastic-agent/internal/pkg/agent/application/gateway/fleet"
 	"github.com/elastic/elastic-agent/internal/pkg/agent/application/info"
 	"github.com/elastic/elastic-agent/internal/pkg/agent/application/paths"
-<<<<<<< HEAD
-	"github.com/elastic/elastic-agent/internal/pkg/agent/application/upgrade/details"
-=======
-	"github.com/elastic/elastic-agent/internal/pkg/agent/application/upgrade/ttl"
->>>>>>> 164cc900a (Extract upgrade/details to pkg/upgrade/details for cross-repo sharing (#14646))
 	"github.com/elastic/elastic-agent/internal/pkg/agent/configuration"
 	"github.com/elastic/elastic-agent/internal/pkg/agent/errors"
 	"github.com/elastic/elastic-agent/internal/pkg/agent/storage"

@@ -25,11 +25,7 @@ import (
 	"github.com/elastic/elastic-agent/internal/pkg/testutils"
 	"github.com/elastic/elastic-agent/pkg/core/logger/loggertest"
 	"github.com/elastic/elastic-agent/pkg/limits"
-<<<<<<< HEAD
-=======
 	"github.com/elastic/elastic-agent/pkg/upgrade/details"
-	"github.com/elastic/elastic-agent/pkg/utils"
->>>>>>> 164cc900a (Extract upgrade/details to pkg/upgrade/details for cross-repo sharing (#14646))
 )
 
 func TestMergeFleetConfig(t *testing.T) {

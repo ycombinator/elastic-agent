@@ -22,11 +22,8 @@ import (
 	"github.com/elastic/elastic-agent/internal/pkg/agent/application/upgrade/artifact"
 	"github.com/elastic/elastic-agent/internal/pkg/testutils/fipsutils"
 	"github.com/elastic/elastic-agent/pkg/core/logger"
-<<<<<<< HEAD
-	"github.com/elastic/elastic-agent/testing/proxytest"
-=======
 	"github.com/elastic/elastic-agent/pkg/upgrade/details"
->>>>>>> 164cc900a (Extract upgrade/details to pkg/upgrade/details for cross-repo sharing (#14646))
+	"github.com/elastic/elastic-agent/testing/proxytest"
 )
 
 func TestVerify(t *testing.T) {
