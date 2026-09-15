@@ -16,7 +16,7 @@ require (
 	github.com/containerd/errdefs v1.0.0
 	github.com/docker/go-units v0.5.0
 	github.com/dolmen-go/contextio v1.0.0
-	github.com/elastic/beats/v7 v7.0.0-alpha2.0.20260901223012-36f46e8aeecd
+	github.com/elastic/beats/v7 v7.0.0-alpha2.0.20260914213649-fc7c4e10aa01
 	github.com/elastic/cloud-on-k8s/v3 v3.4.1
 	github.com/elastic/elastic-agent-client/v7 v7.18.1
 	github.com/elastic/elastic-agent-libs v0.46.3
@@ -25,7 +25,7 @@ require (
 	github.com/elastic/fleet-server/pkg/api v0.0.0-20260515154942-99dc973fd52e
 	github.com/elastic/go-elasticsearch/v8 v8.19.7
 	github.com/elastic/go-sysinfo v1.15.5
-	github.com/elastic/go-ucfg v0.9.1
+	github.com/elastic/go-ucfg v0.9.2
 	github.com/elastic/mock-es v0.0.0-20260210135402-3276c233eeeb
 	github.com/elastic/sarama v1.19.1-0.20260310070522-abae92ca1603
 	github.com/fatih/color v1.19.0
@@ -72,7 +72,7 @@ require (
 	go.opentelemetry.io/otel/sdk/metric v1.45.0
 	go.uber.org/zap v1.28.0
 	go.yaml.in/yaml/v3 v3.0.5
-	golang.org/x/crypto v0.55.0
+	golang.org/x/crypto v0.56.0
 	golang.org/x/mod v0.40.0
 	golang.org/x/net v0.58.0
 	golang.org/x/sync v0.22.0
